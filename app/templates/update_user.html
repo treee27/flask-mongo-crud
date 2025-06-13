@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update User</title>
+</head>
+<body>
+    <h1>Update User</h1>
+    <form method="POST">
+        Name: <input type="text" name="name" value="{{ user.name }}" required><br><br>
+        Email: <input type="email" name="email" value="{{ user.email }}" required><br><br>
+        Password: <input type="password" name="password" placeholder="Leave blank to keep same"><br><br>
+        <input type="submit" value="Update User">
+    </form>
+    <br>
+    <a href="{{ url_for('users_bp.index') }}">Back</a>
+</body>
+</html>
